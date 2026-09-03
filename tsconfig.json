@@ -2,8 +2,8 @@
   "compilerOptions": {
     /* Entorno de ejecución */
     "target": "ES2022",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "Node16",
+    "moduleResolution": "node16",
     "lib": ["ES2022"],
 
     /* Rutas del proyecto */
@@ -19,6 +19,9 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+
+    /* Tipos globales */
+    "types": ["node"],
 
     /* Optimización de compilación y librerías de terceros */
     "skipLibCheck": true,
