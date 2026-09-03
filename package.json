@@ -1,0 +1,40 @@
+{
+  "name": "catalog-reverse-engineering",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "tsx scripts/firecrawl/scrape.ts",
+    "capture": "tsx scripts/playwright/capture.ts",
+    "inspect": "tsx scripts/playwright/inspect.ts",
+    "normalize": "tsx scripts/normalize/build-manifest.ts",
+    "audit": "tsx scripts/normalize/build-report.ts",
+    "reverse-engineer": "npm run scrape && npm run capture && npm run inspect && npm run normalize && npm run audit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhoamSebastianMunoz/scraping-web-catalog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhoamSebastianMunoz/scraping-web-catalog/issues"
+  },
+  "homepage": "https://github.com/JhoamSebastianMunoz/scraping-web-catalog#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "firecrawl": "^4.38.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "playwright": "^1.62.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

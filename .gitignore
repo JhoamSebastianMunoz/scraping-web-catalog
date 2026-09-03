@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+db.jsx
+
+files
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# agents / AI tooling (infraestructura de skills del asistente)
+.agents*
+.AGENTS.md
+.AUDITORIA_FAKE_DATA.md
+.opencode.json
+.skills-lock.json
+
+# AI / code assistants
+.opencode/
+.claude/
+.cursor/
+.cursorrules
+.windsurf/
+.continue/
+.aider*
+.aider.log
+
+# editors
+.vscode/
+.idea/
+*.code-workspace
